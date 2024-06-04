@@ -36,3 +36,27 @@
     transform: rotate(360deg);
   }
 }
+
+*{
+  box-sizing: border-box;
+}
+.circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    /* background-color: red; */
+    border-top: 3px solid #3498db;  /* Set the background color of the circle */
+    border-radius: 50%; 
+    /* display: inline-block; */
+    animation: loading 2s linear infinite;
+}
+@keyframes loading {
+  0% {
+    transform: rotate(0 deg);           /* Start at width 0 */
+  }
+  100% {
+      transform: rotate(360deg);          /* End at width 0 */
+  }
+}
